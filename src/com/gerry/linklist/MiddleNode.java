@@ -52,11 +52,13 @@ public class MiddleNode {
 	public static ListNode middleNode(ListNode head) {
 		int num = 0;
 		ListNode tmp = head;
+		// 遍历全部节点，获取节点总数
 		while (tmp != null) {
 			num ++;
 			tmp = tmp.next;
 		}
 		int mid = 0;
+		// 第二次遍历一半个数节点
 		while (mid < num / 2) {
 			mid ++;
 			head = head.next;

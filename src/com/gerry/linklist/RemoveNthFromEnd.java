@@ -70,10 +70,12 @@ public class RemoveNthFromEnd {
 		while (fast != null) {
 			fast = fast.next;
 			num++;
+			// 慢指针比快指针要慢走N步
 			if (num > n) {
 				slow = slow.next ;
 			}
 		}
+		// 删除节点
 		slow.next = slow.next.next;
 		return sentry.next;
 	}
