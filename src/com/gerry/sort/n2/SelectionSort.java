@@ -1,4 +1,4 @@
-package com.gerry.sort;
+package com.gerry.sort.n2;
 
 import java.util.Arrays;
 
